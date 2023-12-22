@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./styles.css" />
+        <title>Шифр Цезаря</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Шифр Цезаря</h1>
+            <div class="language">
+                <label for="language">Мова:</label>
+                <select id="language" onchange="changeLanguage()">
+                    <option value="en">Англійська</option>
+                    <option value="ua">Українська</option>
+                </select>
+            </div>
+            <div class="operation">
+                <label for="inputText">Введіть текст:</label>
+                <textarea id="inputText" placeholder="Введіть текст"></textarea>
+                <label for="key">Ключ:</label>
+                <input
+                    type="number"
+                    id="key"
+                    min="1"
+                    placeholder="Введіть ключ"
+                />
+                <div class="buttonGroup">
+                    <button onclick="encrypt()">Зашифрувати</button>
+                    <button onclick="decrypt()">Розшифрувати</button>
+                </div>
+            </div>
+            <div class="result">
+                <label for="outputText">Результат:</label>
+                <textarea id="outputText" readonly></textarea>
+            </div>
+        </div>
+
+        <script src="./cipher.js"></script>
+    </body>
+</html>

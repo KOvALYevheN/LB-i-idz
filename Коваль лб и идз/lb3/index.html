@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>LR 3</title>
+        <script src="./calcExperience.js"></script>
+    </head>
+    <body>
+        <h3>Введіть дані про співробітників</h3>
+
+        <form id="employeeForm">
+            <label for="employee1Name">Прізвище співробітника 1:</label>
+            <input type="text" id="employee1Name" required />
+            <label for="employee1HireDate">Дата прийому на роботу:</label>
+            <input type="date" id="employee1HireDate" required /><br />
+
+            <label for="employee2Name">Прізвище співробітника 2:</label>
+            <input type="text" id="employee2Name" required />
+            <label for="employee2HireDate">Дата прийому на роботу:</label>
+            <input type="date" id="employee2HireDate" required /><br />
+
+            <label for="employee3Name">Прізвище співробітника 3:</label>
+            <input type="text" id="employee3Name" required />
+            <label for="employee3HireDate">Дата прийому на роботу:</label>
+            <input type="date" id="employee3HireDate" required /><br />
+
+            <label for="employee4Name">Прізвище співробітника 4:</label>
+            <input type="text" id="employee4Name" required />
+            <label for="employee4HireDate">Дата прийому на роботу:</label>
+            <input type="date" id="employee4HireDate" required /><br />
+
+            <label for="employee5Name">Прізвище співробітника 5:</label>
+            <input type="text" id="employee5Name" required />
+            <label for="employee5HireDate">Дата прийому на роботу:</label>
+            <input type="date" id="employee5HireDate" required /><br />
+
+            <button type="button" onclick="calculateExperience()">
+                Розрахувати стаж
+            </button>
+        </form>
+
+        <h3>Детальний стаж роботи</h3>
+        <ul id="employeeExperienceList"></ul>
+
+        <h3>Середній стаж роботи</h3>
+        <p id="averageExperience"></p>
+    </body>
+</html>
